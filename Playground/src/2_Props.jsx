@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 function Results (props){
 const BgColor= props.score >= 7 ? "#07cc00ff" : "#cc0700ff";
@@ -20,10 +20,10 @@ const style = {
     );
 }
     
-    Results.propTypes = {
-        name: PropTypes.string,      
-        score: PropTypes.number.isRequired,
-    };
+    // Results.propTypes = {
+    //     name: PropTypes.string,      
+    //     score: PropTypes.number.isRequired,
+    // };
     // Results.defaultProps = {
     //     name: "Guest User",
     //     score: 9,

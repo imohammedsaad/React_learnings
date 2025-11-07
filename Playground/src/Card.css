@@ -1,0 +1,108 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  padding: 16px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.btnn {
+  padding: 12px 24px;
+  margin: 8px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btnn:hover {
+  background: #0066d6;
+}
+
+.btnn:active {
+  transform: scale(0.95);
+}
+
+.reset {
+  background: #dc3545;
+}
+
+.reset:hover {
+  background: #c82333;
+}
+.counter-container {
+  border: 2px solid black;
+  border-radius: 1.2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+  padding: 2px;
+}
+
+
+.container {
+  border: 2px solid #ddd;
+  width: 350px;
+  margin: px auto;
+  padding: 10px;
+  background: #f5f5f5e6;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.info {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #357ac9;
+}
+input[type="color"] {
+  width: 60px;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  background: none;
+}
