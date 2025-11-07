@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./Header"
+import Footer from "./Footer"
+import Card from "./1_Components"
+import Results from "./2_Props"
+import  List from "./3_ListRendering"
+import "./App.css"
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+  return(
+    <main>
+      <Header/>
+        <div className="CardBox">
+          <Card
+          name = "Mohammed Saad"
+          imgurl = "https://media.licdn.com/dms/image/v2/D5603AQHaXr-e4JhvhQ/profile-displayphoto-scale_200_200/B56ZmP3FZIJ8AY-/0/1759055206914?e=2147483647&v=beta&t=7BRIvalfXiica7MRr2oWBC5H0g7h4lytVfI4DP4A9hg"
+          description = "A passionate developer with expertise in React.js and web development."
+          />
+          <Card
+          name = "Mohammed Saad"
+          imgurl = "https://media.licdn.com/dms/image/v2/D5603AQHaXr-e4JhvhQ/profile-displayphoto-scale_200_200/B56ZmP3FZIJ8AY-/0/1759055206914?e=2147483647&v=beta&t=7BRIvalfXiica7MRr2oWBC5H0g7h4lytVfI4DP4A9hg"
+          description = "A passionate developer with expertise in React.js and web development."
+          />
+        </div>
+        <Results score={8} name="Mohammed Saad"/>     
+        <Results/> 
+        <List/>
+      <Footer/>
+    </main>
   )
 }
 
