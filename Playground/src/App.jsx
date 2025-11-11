@@ -1,6 +1,7 @@
 import Header from "./Header"
 import Footer from "./Footer"
 import ColorPickerApp from "./00_ColorPickerApp"
+import ToDoApp from "./00_ToDoApp"
 import CounterApp from "./00_CounterApp"
 import Card from "./1_Components"
 import Results from "./2_Props"
@@ -8,7 +9,8 @@ import  List from "./3_ListRendering"
 import ClickEvents from "./4_ClickEvents"
 import UseStateHook from "./5_UseStateHook"
 import OnChangeHandler from "./6_OnChangeHandler"
-
+import UpdaterFunctions from "./7_UpdaterFunctions"
+import UseEffectHook from "./8_UseEffectHook"
 import "./App.css"
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
     <main>
       <Header/>
       <CounterApp/>
+      <ToDoApp/>
+
       <br/>
         <div className="CardBox">
           <Card
@@ -45,6 +49,7 @@ function App() {
         <div className="CardBox">
         {/* <ClickEvents/> */}
         <UseStateHook/>
+
         <OnChangeHandler/>     
         </div>  
         <br/>
@@ -52,6 +57,13 @@ function App() {
         <ColorPickerApp/>
         </div>
          <List subject={subject} Students={Students}/>
+        <div className="CardBox">
+        <UpdaterFunctions/>
+        </div>
+        <div className="CardBox">
+        <UseEffectHook/>
+        </div>
+
 
       <Footer/>
     </main>
