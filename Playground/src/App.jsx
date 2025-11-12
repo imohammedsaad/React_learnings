@@ -11,7 +11,10 @@ import UseStateHook from "./5_UseStateHook"
 import OnChangeHandler from "./6_OnChangeHandler"
 import UpdaterFunctions from "./7_UpdaterFunctions"
 import UseEffectHook from "./8_UseEffectHook"
+import MyComponent from "./9_useRefHook"
 import "./App.css"
+import DigitalClock from "./00_digitalClock"
+import StopWatch from "./00_StopWatch"
 
 function App() {
   
@@ -26,10 +29,26 @@ function App() {
       {Id:203, name:"Prajwal"},
     ]
   return(
+    
     <main>
       <Header/>
+      <div className="CardBox">
+        <StopWatch/>
+      </div>
+
+      <div className="clock-container">
+           <div className="clock">
+            <span>
+              <DigitalClock/>
+            </span> 
+            </div>
+        </div>
       <CounterApp/>
       <ToDoApp/>
+      <br/>
+        <div className="CardBox">
+          <MyComponent/>
+        </div>        
 
       <br/>
         <div className="CardBox">
