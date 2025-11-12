@@ -196,4 +196,4 @@ function focusInput() { inputRef.current?.focus(); }
 
 ---
 
-MIT © [Your Name]
+MIT © [Mohammed Saad]
